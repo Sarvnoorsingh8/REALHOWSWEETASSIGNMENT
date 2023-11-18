@@ -1,0 +1,443 @@
+/* General Styling */
+
+/* Define custom font 'Jelly Bean' */
+@font-face {
+    font-family: 'Jelly Bean';
+    src: url(../fonts/Jelly-Bean-Script-DEMO-Reg/Jelly\ Bean\ Script.ttf);
+}
+
+/* Enable smooth scrolling for the entire HTML document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./images1/back2.jpg);
+    background-size: 25%;
+    background-position: center;
+    background-repeat: repeat;
+}
+/* Special section */
+.special {
+    background: url('./images1/back4.jpg') center/cover no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+/* button hover*/
+.button:hover {
+    background-color: #2a4959; /* Darker color on hover */
+}
+
+/* Apply common font styles to various elements */
+h1, h2, h3, h4, h5, h6, p, a, li, label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Apply specific font style to certain elements */
+.first-img p, .products h2, .special > h2, .Join h2 {
+    font-family: 'Jelly Bean', sans-serif;
+}
+
+/* Override font for h1 */
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #244602;
+    display: flex;
+    align-items: center;
+}
+
+/* Header link styles */
+header a {
+    text-decoration: none;
+    color: #f4f4f4;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Removing default list styling for header links */
+header li {
+    list-style: none;
+}
+
+/* Navigation styling */
+header nav {
+    margin-right: 10px; /* Adjusted for responsiveness */
+}
+/* search container styling*/
+.search-container {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+#search-input {
+    
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+#search-button {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Styling for menu items in the header */
+header nav menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav menu li {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Logo design */
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+/* Styling for the first image section */
+.firstimg {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.firstimg img {
+    height: auto;
+    max-width: 100%;
+}
+
+.firstimg h1 {
+    color: rgb(216, 229, 36);
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.firstimg p {
+    font-size: 35px;
+    color: rgb(174, 36, 229);
+}
+
+.firstimg .button {
+    font-size: 15px;
+    color: rgb(208, 14, 14);
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    background-color: #3e5e37;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for footer links */
+footer > div:nth-child(2) > ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer li {
+    list-style: none;
+    padding: 10px;
+}
+
+footer div img {
+    height: 150px;
+}
+
+/* Styling for products section */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 5%;
+}
+
+.products h2 {
+    color: #436c02;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.products h3 {
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for candy rows in the products section */
+.candiesr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for individual candies in the products section */
+.candie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adjusted styling for navigation and search container */
+nav {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+ul {
+    list-style: none;
+    display: flex; /* Display list items horizontally */
+}
+
+li {
+    margin-right: 20px;
+}
+
+.search-container {
+    margin-left: auto; /* Push the search container to the right */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.candie > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #026c30;
+    border-radius: 20px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+}
+.candie-content>p:nth-child(3){
+    color: #6f1d1d;
+    font-size: larger;
+
+}
+.candie-image img{
+    height: 80px;
+    width: auto;
+    padding: 10px;
+}
+/*Styling our buttons*/
+.button{
+    background-color: rgba(91, 142, 168, 0.732);
+    padding: 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    width: auto;
+    color: #31026c;
+    font-size: 15px;
+    font-weight: 600;
+}
+/*Special section*/
+.special{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-image: url(./images1/back4.jpg);
+   
+}
+.special > div{
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+}
+.special > h2{
+    background-color:#5f8a8a;
+    color: white;
+    border-radius: 80px;
+    padding: 10px;
+    font-size: 40px; 
+    font-weight: 1000;
+    text-align: center;
+}
+/*extra section in special*/
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 280px;
+    background-color: #6f4328c4;
+    border-radius: 15px;
+    padding: 0px;
+    
+}
+.extra-image img{
+    height: 200px;
+    width: auto;
+   
+}
+.extra-cap{
+    margin-top: 19px;
+    color: #96885e;
+}
+/*upcoming section in special*/
+.upcoming{
+    margin-top: 40px;
+    width: 440px;
+  background-color: rgba(106, 65, 27, 0.696); 
+    background-size: 70%;
+    height: 420px;
+    border-radius: 15px;
+}
+.upcoming-cap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+.upcoming-cap h2{
+    margin: 20px;
+    color:rgb(206, 142, 90)   
+}
+.imagery img{
+    height: 200px;
+    width: auto;
+}
+/*Join section*/
+.Join {
+    background-image: url(./images1/circular.jpeg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 5%;
+}
+.Join p{
+    padding: 2%;
+}
+
+.Join div img{
+    height: 500px;
+    width: 450px;
+    opacity: 0.77;
+}
+.Join-cap{
+    padding: 20px;
+}
+.Join h2{
+    margin-bottom: 20px;
+    font-size: 40px; 
+    font-family: 'Jelly bean', sans-serif;
+    color:#3c026c
+}
+.Join p{
+    font-size: 25px;
+    color: rgb(188, 36, 36);
+}
+
+
+/*Design for our form*/
+.form-grid{
+    background-color: #02636c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 45px;  
+    margin-bottom: 5%;  
+    opacity: 0.8;
+}
+.form-grid label{
+    border-radius: 22px;
+    font-size: 20px;
+    color:#31026c;
+}
+.form-grid div{
+    padding: 15px;
+}
+.form-grid div:nth-child(3) input{
+    padding-left: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Add specific styles for smaller screens here */
+    body {
+        background-size: 50%;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        margin-left: 100px;
+    }
+    .firstimg img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .firstimg h1 {
+        font-size: 40px;
+    }
+
+    .firstimg p {
+        font-size: 15px;
+    }
+
+    .firstimg .button {
+        font-size: 12px;
+    }
+    .candiesr{
+        flex-direction: column;
+    }
+    .special >div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .special{
+        align-items: center;
+    }
+    .extra{
+        margin-right: 75px;
+        padding: 10px;
+        text-align: center;
+    }
+   
+    .Join img{
+        height: 170px;
+    }
+    .Join h2{
+        font-size: 50px;
+    }
+}
